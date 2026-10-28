@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murilo Neto | Barbeiro • Ondina Academy</title>
+  <meta name="description" content="Portfólio de cortes e apresentação profissional de Murilo Dias Oliveira Neto, barbeiro em formação na Ondina Academy.">
+  <meta name="theme-color" content="#0d0e12">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Murilo Neto | Portfólio de Barbearia">
+  <meta property="og:description" content="Apresentação profissional e galeria de cortes de Murilo Dias Oliveira Neto, aluno Ondina Academy.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Instrument Serif + Inter + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-obsidian text-body selection:bg-brand-orange selection:text-white">
+
+  <!-- Custom Cursor Glow -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- ============================================================
+       TOP NAVIGATION BAR
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <!-- Clean Brand Logo with User Name (No scissors, no barber craft) -->
+      <a href="#hero" class="brand-link" data-smooth-nav="hero">
+        <div class="brand-text">
+          <span class="brand-name">MURILO NETO</span>
+          <span class="brand-status">BARBEIRO // ONDINA ACADEMY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Chapters -->
+      <nav class="nav-chapters" aria-label="Navegação principal">
+        <a href="#sobre" class="nav-item" data-smooth-nav="sobre" data-section="sobre">
+          <span class="nav-index">01</span>
+          <span class="nav-label">Sobre Mim</span>
+        </a>
+        <a href="#projetos" class="nav-item" data-smooth-nav="projetos" data-section="projetos">
+          <span class="nav-index">02</span>
+          <span class="nav-label">Meus Cortes</span>
+        </a>
+        <a href="#especializacao" class="nav-item" data-smooth-nav="especializacao" data-section="especializacao">
+          <span class="nav-index">03</span>
+          <span class="nav-label">Ondina Academy</span>
+        </a>
+        <a href="#contato" class="nav-item" data-smooth-nav="contato" data-section="contato">
+          <span class="nav-index">04</span>
+          <span class="nav-label">Contato</span>
+        </a>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="header-actions">
+        <!-- Direct Quick WhatsApp Link -->
+        <a href="https://wa.me/5519997507959" target="_blank" rel="noopener noreferrer" class="contact-pill-btn">
+          <span class="dot-online"></span>
+          <span>(19) 99750-7959</span>
+        </a>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="menu-trigger" class="menu-trigger" aria-label="Abrir menu" aria-expanded="false">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Active Section Progress Bar -->
+    <div class="scroll-progress-track">
+      <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MOBILE DRAWER MENU
+       ============================================================ -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div class="drawer-user">
+          <span class="drawer-user-name">MURILO NETO</span>
+          <span class="drawer-user-sub">17 ANOS • ONDINA ACADEMY</span>
+        </div>
+        <button id="drawer-close" class="drawer-close" aria-label="Fechar menu">✕</button>
+      </div>
+      <div class="drawer-links">
+        <a href="#sobre" class="drawer-link" data-smooth-nav="sobre">
+          <span class="d-num">01</span>
+          <div class="d-content">
+            <span class="d-title">Sobre Mim</span>
+            <span class="d-sub">Quem sou eu e minha paixão pelo ofício</span>
+          </div>
+        </a>
+        <a href="#projetos" class="drawer-link" data-smooth-nav="projetos">
+          <span class="d-num">02</span>
+          <div class="d-content">
+            <span class="d-title">Meus Cortes</span>
+            <span class="d-sub">Galeria de trabalhos reais</span>
+          </div>
+        </a>
+        <a href="#especializacao" class="drawer-link" data-smooth-nav="especializacao">
+          <span class="d-num">03</span>
+          <div class="d-content">
+            <span class="d-title">Ondina Academy</span>
+            <span class="d-sub">O curso e o refinamento técnico</span>
+          </div>
+        </a>
+        <a href="#contato" class="drawer-link" data-smooth-nav="contato">
+          <span class="d-num">04</span>
+          <div class="d-content">
+            <span class="d-title">Contato</span>
+            <span class="d-sub">Canais diretos para falar comigo</span>
+          </div>
+        </a>
+      </div>
+      <div class="drawer-footer">
+        <span class="drawer-label">CANAIS DIRETOS</span>
+        <div class="drawer-contacts-list">
+          <a href="https://wa.me/5519997507959" target="_blank" rel="noopener noreferrer" class="drawer-contact-item">
+            <span>WhatsApp: (19) 99750-7959</span>
+          </a>
+          <a href="https://www.instagram.com/murilonetoo_/#" target="_blank" rel="noopener noreferrer" class="drawer-contact-item">
+            <span>Instagram: @murilonetoo_</span>
+          </a>
+          <a href="mailto:muzinhonetom@gmail.com" class="drawer-contact-item">
+            <span>muzinhonetom@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <section id="hero" class="hero-section">
+      <div class="hero-glow-bg"></div>
+      
+      <div class="container hero-container">
+        <!-- Status Pill -->
+        <div class="hero-badge-wrap">
+          <div class="pill-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">MURILO DIAS OLIVEIRA NETO</span>
+            <span class="badge-separator">/</span>
+            <span class="badge-sub">17 ANOS</span>
+            <span class="badge-separator">/</span>
+            <span class="badge-highlight">ONDINA ACADEMY</span>
+          </div>
+        </div>
+
+        <!-- Main Editorial Headline -->
+        <div class="hero-title-box">
+          <h1 class="hero-headline">
+            <span class="line-lead">PAIXÃO PELO CORTE,</span>
+            <span class="line-serif">sede constante de evolução.</span>
+          </h1>
+          <p class="hero-description">
+            Olá! Sou <strong>Murilo Dias Oliveira Neto</strong>, tenho 17 anos e atuo no universo da barbearia. Já conto com experiência prática na cadeira e atualmente estou me especializando na renomada <strong>Ondina Academy</strong> para aperfeiçoar e refinar cada técnica. Este site é a vitrine oficial do meu trabalho e da minha trajetória na profissão.
+          </p>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="hero-cta-group">
+          <a href="#projetos" class="btn-primary" data-smooth-nav="projetos">
+            <span>Ver Meus Cortes</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#sobre" class="btn-secondary" data-smooth-nav="sobre">
+            <span>Conhecer Minha História</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Specifications Grid (Nota style) -->
+        <div class="specs-grid">
+          <div class="spec-card">
+            <div class="spec-header">
+              <span class="spec-num">[ 01 ]</span>
+              <span class="spec-tag">VOCATION</span>
+            </div>
+            <h3 class="spec-title">Amor Pelo Ofício</h3>
+            <p class="spec-text">Cortar cabelo é onde coloco minha dedicação total. Amo o que faço e cada corte é uma oportunidade de entregar excelência.</p>
+          </div>
+
+          <div class="spec-card">
+            <div class="spec-header">
+              <span class="spec-num">[ 02 ]</span>
+              <span class="spec-tag">LEARNING</span>
+            </div>
+            <h3 class="spec-title">Ondina Academy</h3>
+            <p class="spec-text">Aperfeiçoamento técnico contínuo em uma das academias mais conceituadas, refinando visão estética, visagismo e tesoura.</p>
+          </div>
+
+          <div class="spec-card">
+            <div class="spec-header">
+              <span class="spec-num">[ 03 ]</span>
+              <span class="spec-tag">DRIVE</span>
+            </div>
+            <h3 class="spec-title">Vontade de Subir</h3>
+            <p class="spec-text">Com apenas 17 anos e muita disciplina, meu objetivo é claro: evoluir sem parar para me consagrar como um profissional de topo.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Section Anchor Cue -->
+      <a href="#sobre" class="scroll-cue" data-smooth-nav="sobre" aria-label="Rolar para Sobre Mim">
+        <span class="cue-label">CONHEÇA MINHA HISTÓRIA</span>
+        <div class="cue-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 5v14M19 12l-7 7-7-7"/>
+          </svg>
+        </div>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         SECTION 1: SOBRE MIM (About Me)
+         ============================================================ -->
+    <section id="sobre" class="content-section about-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-meta">
+          <div class="section-indicator">
+            <span class="indicator-line"></span>
+            <span class="indicator-tag">SEÇÃO 01 // QUEM SOU EU</span>
+          </div>
+          <h2 class="section-heading">
+            Murilo Dias Oliveira Neto.<br>
+            <span class="font-serif italic text-brand-orange">Dedicado a se tornar referência.</span>
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: The Story & Motivation -->
+          <div class="about-main-text">
+            <div class="manifesto-card">
+              <span class="quote-symbol">“</span>
+              <p class="lead-quote">
+                Gosto de verdade de fazer isso. Tenho 17 anos, já carrego experiência prática na cadeira e hoje invisto no curso da Ondina Academy porque minha meta é subir na profissão e me tornar um barbeiro de alta qualidade.
+              </p>
+            </div>
+
+            <div class="narrative-blocks">
+              <div class="narrative-item">
+                <div class="item-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="item-title">Início Cedo & Prática Real</h4>
+                  <p class="item-body">
+                    Comecei jovem e logo descobri minha vocação na barbearia. Ter experiência prática me deu segurança com as ferramentas, entendimento dos diferentes tipos de cabelo e o gosto pelo contato direto com as pessoas.
+                  </p>
+                </div>
+              </div>
+
+              <div class="narrative-item">
+                <div class="item-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="item-title">Especialização na Ondina Academy</h4>
+                  <p class="item-body">
+                    A prática é fundamental, mas o estudo especializado é o que transforma o barbeiro comum em um mestre do ofício. Na <strong>Ondina Academy</strong>, estou lapidando técnicas de geometria na tesoura, degradê sem marcas, visagismo facial e biossegurança.
+                  </p>
+                </div>
+              </div>
+
+              <div class="narrative-item">
+                <div class="item-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                    <polyline points="17 6 23 6 23 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="item-title">Vontade Real de Subir na Profissão</h4>
+                  <p class="item-body">
+                    Não estou aqui apenas para cortar cabelo, mas para construir uma reputação sólida. Tenho muita vontade de crescer, aprender com os melhores e ser reconhecido pela precisão, humildade e pelo carinho que tenho por esse trabalho.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Bento Profile Stats -->
+          <div class="about-sidebar">
+            <div class="bento-box">
+              <span class="bento-label">PERFIL PROFISSIONAL</span>
+              <h3 class="bento-title">Ficha Técnica</h3>
+              <div class="profile-details-list">
+                <div class="p-detail">
+                  <span class="p-label">Nome:</span>
+                  <span class="p-val">Murilo Dias Oliveira Neto</span>
+                </div>
+                <div class="p-detail">
+                  <span class="p-label">Idade:</span>
+                  <span class="p-val">17 anos</span>
+                </div>
+                <div class="p-detail">
+                  <span class="p-label">Formação:</span>
+                  <span class="p-val highlight">Ondina Academy</span>
+                </div>
+                <div class="p-detail">
+                  <span class="p-label">Especialidades:</span>
+                  <span class="p-val">Cortes Clássicos, Fades, Texturas & Barba</span>
+                </div>
+                <div class="p-detail">
+                  <span class="p-label">Propósito:</span>
+                  <span class="p-val">Excelência técnica e evolução contínua</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Focus areas -->
+            <div class="bento-box secondary">
+              <span class="bento-label">PILARES DO MEU TRABALHO</span>
+              <ul class="skills-checklist">
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Amor sincero pelo que faço no dia a dia</span>
+                </li>
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Dedicação diária nas aulas da Ondina Academy</span>
+                </li>
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Atenção aos mínimos detalhes do acabamento</span>
+                </li>
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Disciplina e foco em subir na carreira</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2: MEUS CORTES (Cuts Portfolio)
+         ============================================================ -->
+    <section id="projetos" class="content-section projects-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-meta">
+          <div class="section-indicator">
+            <span class="indicator-line"></span>
+            <span class="indicator-tag">SEÇÃO 02 // MEUS CORTES & TRABALHOS</span>
+          </div>
+          <div class="heading-with-action">
+            <div>
+              <h2 class="section-heading">
+                Trabalhos reais.<br>
+                <span class="font-serif italic text-brand-orange">Feitos com dedicação e precisão.</span>
+              </h2>
+              <p class="section-subtitle">
+                Aqui estão alguns dos cortes que executei. Cada trabalho reflete a prática que venho acumulando e o refinamento que busco todos os dias.
+              </p>
+            </div>
+
+            <!-- Filter tabs -->
+            <div class="filter-controls" role="tablist">
+              <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos (5)</button>
+              <button class="filter-btn" data-filter="taper" role="tab" aria-selected="false">Taper & Nuca</button>
+              <button class="filter-btn" data-filter="crop" role="tab" aria-selected="false">Texturizado & Crop</button>
+              <button class="filter-btn" data-filter="fade" role="tab" aria-selected="false">Fade & Barba</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Haircuts Grid Showcase (5 user photos) -->
+        <div class="cuts-gallery-grid" id="cuts-grid">
+
+          <!-- CUT 1: Classic Scissor Flow & Clean Taper -->
+          <article class="cut-card" data-category="taper" data-cut-id="1">
+            <div class="cut-image-wrapper">
+              <img src="assets/images/corte-1-classic-taper.jpg" alt="Corte Clássico Masculino com Acabamento em Tesoura e Nuca Limpa" class="cut-img" loading="lazy">
+              <div class="cut-overlay">
+                <button class="btn-zoom-lightbox" aria-label="Ampliar corte 1" data-cut-id="1">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  <span>Ver em Detalhes</span>
+                </button>
+              </div>
+              <span class="cut-badge">[ CORTE 01 ]</span>
+            </div>
+            <div class="cut-details">
+              <div class="cut-tags">
+                <span class="tag">Tesoura & Caimento</span>
+                <span class="tag">Nape Taper</span>
+              </div>
+              <h3 class="cut-title">Classic Flow com Acabamento Natural</h3>
+              <p class="cut-desc">
+                Corte estruturado na tesoura respeitando o caimento e o volume natural dos fios, com nuca suavemente graduada em taper.
+              </p>
+              <div class="cut-specs">
+                <div class="spec-row">
+                  <span class="label">Técnica:</span>
+                  <span class="val">Encaixe de Mechas & Desfiado</span>
+                </div>
+                <div class="spec-row">
+                  <span class="label">Acabamento:</span>
+                  <span class="val">Pezinho Natural e Alinhado</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CUT 2: Clean Neckline & Taper Gradient -->
+          <article class="cut-card" data-category="taper" data-cut-id="2">
+            <div class="cut-image-wrapper">
+              <img src="assets/images/corte-2-neck-taper.jpg" alt="Acabamento de Nuca em Taper Fade com Alinhamento Simétrico" class="cut-img" loading="lazy">
+              <div class="cut-overlay">
+                <button class="btn-zoom-lightbox" aria-label="Ampliar corte 2" data-cut-id="2">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  <span>Ver em Detalhes</span>
+                </button>
+              </div>
+              <span class="cut-badge">[ CORTE 02 ]</span>
+            </div>
+            <div class="cut-details">
+              <div class="cut-tags">
+                <span class="tag">Taper Fade</span>
+                <span class="tag">Simetria de Nuca</span>
+              </div>
+              <h3 class="cut-title">Graduação Limpa & Contorno de Nuca</h3>
+              <p class="cut-desc">
+                Transição homogênea na nuca sem linhas marcadas. Linha limpa que valoriza a simetria da cabeça e confere aspecto elegante.
+              </p>
+              <div class="cut-specs">
+                <div class="spec-row">
+                  <span class="label">Técnica:</span>
+                  <span class="val">Graduação Suave sem Linhas</span>
+                </div>
+                <div class="spec-row">
+                  <span class="label">Foco:</span>
+                  <span class="val">Limpeza de Contorno e Nuca</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CUT 3: Modern Textured Crop & Low Temple Taper -->
+          <article class="cut-card" data-category="crop" data-cut-id="3">
+            <div class="cut-image-wrapper">
+              <img src="assets/images/corte-3-textured-crop.jpg" alt="Textured Crop com Low Taper Lateral e Franja Moderna" class="cut-img" loading="lazy">
+              <div class="cut-overlay">
+                <button class="btn-zoom-lightbox" aria-label="Ampliar corte 3" data-cut-id="3">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  <span>Ver em Detalhes</span>
+                </button>
+              </div>
+              <span class="cut-badge">[ CORTE 03 ]</span>
+            </div>
+            <div class="cut-details">
+              <div class="cut-tags">
+                <span class="tag">French Crop</span>
+                <span class="tag">Low Taper</span>
+                <span class="tag">Texturizado</span>
+              </div>
+              <h3 class="cut-title">Modern Textured Crop & Low Taper</h3>
+              <p class="cut-desc">
+                Visual moderno com franja desfiada e textura evidente no topo, conectado a um degradê sutil e limpo na região da têmpora.
+              </p>
+              <div class="cut-specs">
+                <div class="spec-row">
+                  <span class="label">Técnica:</span>
+                  <span class="val">Point Cutting & Low Taper</span>
+                </div>
+                <div class="spec-row">
+                  <span class="label">Estilização:</span>
+                  <span class="val">Pomada Efeito Matte / Pó</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CUT 4: Mid Drop Flow with Beard Blend -->
+          <article class="cut-card" data-category="fade" data-cut-id="4">
+            <div class="cut-image-wrapper">
+              <img src="assets/images/corte-4-mid-drop-flow.jpg" alt="Mid Taper Fade com Conexão de Barba e Movimento Superior" class="cut-img" loading="lazy">
+              <div class="cut-overlay">
+                <button class="btn-zoom-lightbox" aria-label="Ampliar corte 4" data-cut-id="4">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  <span>Ver em Detalhes</span>
+                </button>
+              </div>
+              <span class="cut-badge">[ CORTE 04 ]</span>
+            </div>
+            <div class="cut-details">
+              <div class="cut-tags">
+                <span class="tag">Mid Taper</span>
+                <span class="tag">Barba Conectada</span>
+              </div>
+              <h3 class="cut-title">Mid Taper Flow & Transição de Barba</h3>
+              <p class="cut-desc">
+                Conexão fluida entre a costeleta e a barba, desenhando com precisão o contorno da mandíbula e equilibrando o volume do topo.
+              </p>
+              <div class="cut-specs">
+                <div class="spec-row">
+                  <span class="label">Técnica:</span>
+                  <span class="val">Drop Taper & Tesoura sobre Pente</span>
+                </div>
+                <div class="spec-row">
+                  <span class="label">Resultado:</span>
+                  <span class="val">Perfil Definido e Elegante</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CUT 5: Low Skin Fade & Precision Beard Sculpt -->
+          <article class="cut-card" data-category="fade" data-cut-id="5">
+            <div class="cut-image-wrapper">
+              <img src="assets/images/corte-5-skin-fade-buzz.jpg" alt="Low Skin Fade Degradê Navalhado com Desenho de Barba Preciso" class="cut-img" loading="lazy">
+              <div class="cut-overlay">
+                <button class="btn-zoom-lightbox" aria-label="Ampliar corte 5" data-cut-id="5">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  <span>Ver em Detalhes</span>
+                </button>
+              </div>
+              <span class="cut-badge">[ CORTE 05 ]</span>
+            </div>
+            <div class="cut-details">
+              <div class="cut-tags">
+                <span class="tag">Skin Fade</span>
+                <span class="tag">Degradê Navalhado</span>
+                <span class="tag">Design de Barba</span>
+              </div>
+              <h3 class="cut-title">Low Skin Fade & Escultura de Barba</h3>
+              <p class="cut-desc">
+                Fade milimétrico que inicia na lâmina zero, com degradê suave e acabamento nítido na barba, trazendo forte presença e contraste.
+              </p>
+              <div class="cut-specs">
+                <div class="spec-row">
+                  <span class="label">Técnica:</span>
+                  <span class="val">Razor Fade (Zero Navalha)</span>
+                </div>
+                <div class="spec-row">
+                  <span class="label">Barba:</span>
+                  <span class="val">Alinhamento e Geometria Facial</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3: ONDINA ACADEMY // APERFEIÇOAMENTO
+         ============================================================ -->
+    <section id="especializacao" class="content-section evolution-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-meta">
+          <div class="section-indicator">
+            <span class="indicator-line"></span>
+            <span class="indicator-tag">SEÇÃO 03 // ONDINA ACADEMY & EVOLUÇÃO</span>
+          </div>
+          <h2 class="section-heading">
+            O aprendizado na<br>
+            <span class="font-serif italic text-brand-orange">Ondina Academy.</span>
+          </h2>
+          <p class="section-subtitle">
+            O curso especializado é o meu compromisso com a excelência. Veja os principais conhecimentos e refinamentos que estou aplicando no meu dia a dia.
+          </p>
+        </div>
+
+        <!-- 4 Step Evolution Timeline -->
+        <div class="roadmap-grid">
+          <div class="roadmap-card">
+            <div class="card-step-badge">PILARES DE ENSINO</div>
+            <h3 class="roadmap-title">Visagismo Aplicado</h3>
+            <p class="roadmap-desc">
+              Compreensão aprofundada dos formatos de rosto e crânio, escolhendo o corte ideal para valorizar os traços individuais de cada pessoa.
+            </p>
+            <div class="card-focus-tag">HARMONIA VISUAL</div>
+          </div>
+
+          <div class="roadmap-card">
+            <div class="card-step-badge">PILARES DE ENSINO</div>
+            <h3 class="roadmap-title">Transições de Fade</h3>
+            <p class="roadmap-desc">
+              Domínio minucioso das alavancas, disfarce de linhas e transição perfeita entre o claro, médio e escuro em qualquer textura capilar.
+            </p>
+            <div class="card-focus-tag">DEGRADÊ SEM MARCAS</div>
+          </div>
+
+          <div class="roadmap-card">
+            <div class="card-step-badge">PILARES DE ENSINO</div>
+            <h3 class="roadmap-title">Geometria na Tesoura</h3>
+            <p class="roadmap-desc">
+              Angulação correta dos dedos, mechas guias precisas, desfiados e texturização controlada para criar movimento e caimento natural.
+            </p>
+            <div class="card-focus-tag">CONTROLE & ESTRUTURA</div>
+          </div>
+
+          <div class="roadmap-card">
+            <div class="card-step-badge">PILARES DE ENSINO</div>
+            <h3 class="roadmap-title">Precisão na Lâmina</h3>
+            <p class="roadmap-desc">
+              Técnica de navalhete com firmeza e suavidade, respeitando a sensibilidade da pele, garantindo contornos nítidos e biossegurança total.
+            </p>
+            <div class="card-focus-tag">ACABAMENTO CIRÚRGICO</div>
+          </div>
+        </div>
+
+        <!-- Ambition Banner -->
+        <div class="ambition-banner">
+          <div class="banner-inner">
+            <span class="banner-tag">FOCO & AMBIÇÃO</span>
+            <h3 class="banner-quote">
+              “Tenho 17 anos e muita vontade de crescer. A Ondina Academy tem sido essencial para lapidar minhas habilidades e me preparar para chegar ao topo da profissão.”
+            </h3>
+            <div class="banner-signature">
+              <span class="sign-name">Murilo Dias Oliveira Neto</span>
+              <span class="sign-role">Barbeiro em constante aperfeiçoamento</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4: CONTATO (Direto e Simplificado)
+         ============================================================ -->
+    <section id="contato" class="content-section contact-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-meta">
+          <div class="section-indicator">
+            <span class="indicator-line"></span>
+            <span class="indicator-tag">SEÇÃO 04 // MEUS CONTATOS</span>
+          </div>
+          <h2 class="section-heading">
+            Canais diretos para<br>
+            <span class="font-serif italic text-brand-orange">falar comigo.</span>
+          </h2>
+          <p class="section-subtitle">
+            Quer trocar uma ideia sobre barbearia, acompanhar meus novos cortes ou entrar em contato direto? Utilize qualquer um dos meus canais oficiais abaixo:
+          </p>
+        </div>
+
+        <div class="contact-channels-grid">
+          <!-- WhatsApp Card -->
+          <a href="https://wa.me/5519997507959" target="_blank" rel="noopener noreferrer" class="contact-card primary">
+            <div class="card-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div class="card-info">
+              <span class="card-channel">TELEFONE & WHATSAPP</span>
+              <span class="card-value">(19) 99750-7959</span>
+              <span class="card-hint">Mensagem direta no WhatsApp</span>
+            </div>
+            <div class="card-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+              </svg>
+            </div>
+          </a>
+
+          <!-- Instagram Card -->
+          <a href="https://www.instagram.com/murilonetoo_/#" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="card-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <div class="card-info">
+              <span class="card-channel">INSTAGRAM OFICIAL</span>
+              <span class="card-value">@murilonetoo_</span>
+              <span class="card-hint">Acompanhe novos cortes e o dia a dia na Ondina</span>
+            </div>
+            <div class="card-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+              </svg>
+            </div>
+          </a>
+
+          <!-- Email Card -->
+          <a href="mailto:muzinhonetom@gmail.com" class="contact-card">
+            <div class="card-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="card-info">
+              <span class="card-channel">E-MAIL</span>
+              <span class="card-value">muzinhonetom@gmail.com</span>
+              <span class="card-hint">Contato por e-mail</span>
+            </div>
+            <div class="card-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       INTERACTIVE LIGHTBOX MODAL (Visualização Limpa)
+       ============================================================ -->
+  <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-dialog">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Fechar visualização">✕</button>
+      
+      <div class="lightbox-content">
+        <div class="lightbox-media">
+          <img id="lightbox-img" src="" alt="Corte ampliado" class="lightbox-img">
+        </div>
+        
+        <div class="lightbox-meta">
+          <span class="lightbox-tag" id="lightbox-badge">[ CORTE EM DETALHE ]</span>
+          <h3 class="lightbox-title" id="lightbox-title">Título do Corte</h3>
+          <p class="lightbox-description" id="lightbox-desc">Descrição da técnica e acabamento.</p>
+
+          <div class="lightbox-specs-list">
+            <div class="spec-item">
+              <span class="spec-label">TÉCNICA</span>
+              <span class="spec-data" id="lightbox-technique">-</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">FOCO</span>
+              <span class="spec-data" id="lightbox-focus">-</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SITE FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-copy">© 2026 Murilo Dias Oliveira Neto. Todos os direitos reservados.</span>
+      </div>
+
+      <div class="footer-center">
+        <span class="footer-pill">
+          <span class="pill-dot"></span>
+          ONDINA ACADEMY • APERFEIÇOAMENTO CONSTANTE
+        </span>
+      </div>
+
+      <div class="footer-right">
+        <button id="back-to-top" class="back-to-top-btn" aria-label="Voltar ao início">
+          <span>VOLTAR AO TOPO</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
